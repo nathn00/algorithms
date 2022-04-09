@@ -1,2 +1,3 @@
 *.py
 !scrapper.py
+!boj.py
