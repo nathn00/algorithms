@@ -108,13 +108,39 @@
 # else:
 #     print(H, M - 45)
 
-# 2525
-A, B = map(int, input().split())
-C = int(input())
-n = (B + C) // 60  # 몫
-if A + n > 23:
-    print((A + n) % 24, (B + C) % 60)
-else:
-    print(A + n, (B + C) % 60)
+# 2525 => n 공식이 정말 혁명적인 공식
+# A, B = map(int, input().split())
+# C = int(input())
+# n = (B + C) // 60  # 몫
+# if A + n > 23:
+#     print((A + n) % 24, (B + C) % 60)
+# else:
+#     print(A + n, (B + C) % 60)
 
-# 2480
+# 2480 => set함수, list함수, sum함수 알게됨
+# a, b, c = map(int, input().split())
+# arr = [a, b, c]
+# arr_set = list(set(arr))
+# arr_set_length = len(arr_set)
+# if arr_set_length == 1:
+#     print(10000 + (1000 * arr_set[0]))
+# elif arr_set_length == 2:
+#     print(1000 + (100 * (sum(arr) - sum(arr_set))))
+# else:
+#     print(100 * max(arr))
+
+# 3단계 반복문
+# 2739
+# 10950
+# 8393
+# 15552
+# 2741
+# 2742
+# 11021
+# 11022
+# 2438
+# 2439
+# 10871
+# 10952
+# 10951
+# 1110
