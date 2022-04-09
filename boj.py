@@ -57,7 +57,6 @@
 #     print(int(str(b)[i]) * a)
 # print(a * b)
 
-# 2단계 - 조건문
 # 1330
 # A, B = map(int, input().split())
 # if A > B:
@@ -129,20 +128,61 @@
 # else:
 #     print(100 * max(arr))
 
-# 3단계 - 반복문
-# 2739
-# 10950
-# 8393
-# 15552
-# 2741
-# 2742
-# 11021
-# 11022
 # 2438
-# 2439
-# 10871
-# 10952
-# 10951
-# 1110
+# N = int(input())
+# for i in range(N):
+#     print('*'*(i+1))
 
-# 4단계 - 1차원배열
+# 2439
+# N = int(input()) ==> solution 1
+# for i in range(N):
+# print(f"{'*' * (i + 1):>{N}}")
+
+# N = int(input()) ==> solution 2
+# for i in range(N):
+#     print(('*'*(i+1)).rjust(N))
+
+# 2440
+# N = int(input())
+# for i in reversed(range(N)):
+#     print('*' * (i + 1))
+
+# 2441
+# N = int(input())
+# for i in reversed(range(N)):
+#     print(('*' * (i + 1)).rjust(N))
+
+# 2442
+# N = int(input())
+# for i in range(N):
+#     print(('*' * (i + 1)).rjust(N) + ('*' * i)) ==> space fnc loop
+# print((' ' * (i)) + ('*' * (N - i)) + ('*' * (N - i - 1))) ==> reversed loop
+# print((' ' * (N - i - 1)) + ('*' * ((2 * (i + 1)) - 1))) ==> kcj's king god general solution(no reverse)
+
+# 2739
+
+# 10950
+
+# 8393
+
+# 15552
+
+# 2741
+
+# 2742
+
+# 11021
+
+# 11022
+
+# 2438
+
+# 2439
+
+# 10871
+
+# 10952
+
+# 10951
+
+# 1110
