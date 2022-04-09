@@ -155,8 +155,8 @@
 # 2442
 # N = int(input())
 # for i in range(N):
-#     print(('*' * (i + 1)).rjust(N) + ('*' * i)) ==> space fnc loop
-# print((' ' * (i)) + ('*' * (N - i)) + ('*' * (N - i - 1))) ==> reversed loop
+#     print(('*' * (i + 1)).rjust(N) + ('*' * i)) ==> space fnc loops
+# print((' ' * (i)) + ('*' * (N - i)) + ('*' * (N - i - 1))) ==> reversed loops
 # print((' ' * (N - i - 1)) + ('*' * ((2 * (i + 1)) - 1))) ==> kcj's king god general solution(no reverse)
 
 # 2443
