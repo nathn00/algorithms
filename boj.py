@@ -159,6 +159,11 @@
 # print((' ' * (i)) + ('*' * (N - i)) + ('*' * (N - i - 1))) ==> reversed loop
 # print((' ' * (N - i - 1)) + ('*' * ((2 * (i + 1)) - 1))) ==> kcj's king god general solution(no reverse)
 
+# 2443
+# N = int(input())
+# for i in range(N):
+#     print(('*' * (N - i)).rjust(N) + ('*' * (N - i - 1)))
+
 # 2739
 
 # 10950
