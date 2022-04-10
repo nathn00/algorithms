@@ -165,22 +165,54 @@
 #     print(('*' * (N - i)).rjust(N) + ('*' * (N - i - 1)))
 
 # 2739
+# N = int(input())
+# for i in range(9):
+#     print(f'{N} * {i + 1} = {N * (i + 1)}')
 
 # 10950
+# T = int(input())
+# for i in range(T):
+#     A, B = map(int, input().split())
+#     print(A + B)
 
 # 8393
+# n = int(input())
+# initial_num = 0
+# for i in range(n):
+#     initial_num += i + 1
+# print(initial_num)
 
 # 15552
+# import sys
+# T = int(sys.stdin.readline().rstrip())
+# for i in range(T):
+#     [A, B] = map(int, sys.stdin.readline().split()) => [A, B] 를 A, B 로 바꿔줘도 됨. A, B라고 해도 파이썬이 리스트로 인식하는 것 같음.
+#     print(A + B)
 
 # 2741
+# N = int(input())
+# for i in range(N):
+#     print(i + 1)
 
 # 2742
+# N = int(input())
+# for i in reversed(range(N)):
+#     print(i + 1)
 
 # 11021
+# T = int(input())
+# for i in range(T):
+#     A, B = map(int, input().split())
+#     print(f"Case #{i + 1}: {A + B}")
 
 # 11022
+# T = int(input())
+# for i in range(T):
+#     A, B = map(int, input().split())
+#     print(f"Case #{i + 1}: {A} + {B} = {A + B}")
 
 # 2438
+N, X = map(int, input().split())  # 개어렵다...
 
 # 2439
 
