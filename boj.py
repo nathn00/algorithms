@@ -211,15 +211,47 @@
 #     A, B = map(int, input().split())
 #     print(f"Case #{i + 1}: {A} + {B} = {A + B}")
 
-# 2438
-N, X = map(int, input().split())  # 개어렵다...
-
-# 2439
-
-# 10871
-
 # 10952
+# while True:
+#     A, B = map(int, input().split())
+#     if A != 0 and B != 0:
+#         print(A + B)
+#     else:
+#         break
 
 # 10951
+# from sys import stdin
+# while True:
+#     try:
+#         A, B = map(int, stdin.readline().split())
+#     except:
+#         break
+#     else:
+#         print(A + B)
 
-# 1110
+# 2562
+# arr = []
+# for i in range(9):
+#     n = int(input())
+#     arr.append(n)
+# print(max(arr))
+# print(arr.index(max(arr)) + 1)
+
+# 2577
+# A = int(input())
+# B = int(input())
+# C = int(input())
+# Time = str(A * B * C)
+# for i in range(10):
+#     print(Time.count(f'{i}'))
+
+# 3052
+# arr = []
+# for i in range(10):
+#     a = int(input())
+#     arr.append(a % 42)
+# print(len(set(arr)))
+
+# 1152
+Paragraph = input()
+print(len(Paragraph.split()))
