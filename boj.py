@@ -253,5 +253,5 @@
 # print(len(set(arr)))
 
 # 1152
-Paragraph = input()
-print(len(Paragraph.split()))
+# Paragraph = input()
+# print(len(Paragraph.split()))
