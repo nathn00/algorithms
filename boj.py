@@ -255,3 +255,137 @@
 # 1152
 # Paragraph = input()
 # print(len(Paragraph.split()))
+
+# 10871
+# import sys
+# N, X = map(int, sys.stdin.readline().split())
+# A = list(map(str, input().split()))
+# under = []
+# for i in range(N):
+#     if len(A) == N:
+#         try:
+#             if int(A[i]) < X:
+#                 under.append(A[i])
+#         except:
+#             break
+#     else:
+#         break
+# print(' '.join(under))
+
+# 1110 ==> 정수형으로 한번 더풀어보기!
+# N = input()
+# arr = []
+# if len(N) == 1:
+#     N = '0' + N[0]
+# arr.append(N[1] + str(int(N[0]) + int(N[1]))[-1])
+# while arr[-1] != N:
+#     arr.append(arr[-1][1] + str(int(arr[-1][0]) + int(arr[-1][1]))[-1])
+# print(len(arr))
+# N = input()
+# arr = []
+# if len(N) == 1:
+#     arr.append(N[0] + N[0])
+# else:
+#     arr.append(N[1] + str(int(N[0]) + int(N[1]))[-1])
+# while arr[-1] != N:
+#     if len(str(int(arr[-1][0]) + int(arr[-1][1]))) == 1:
+#         arr.append(arr[-1] + arr[-1])
+#     else:
+#         arr.append(arr[-1][1] + str(int(arr[-1][0]) + int(arr[-1][1]))[-1])
+# print(arr)
+
+# 10818
+# N = int(input())
+# X = list(map(int, input().split()))
+# if len(X) == N:
+#     print(min(X), max(X))
+
+# 1546
+# N = int(input())
+# X = list(map(int, input().split()))
+# if len(X) == N:
+#     score = 0
+#     for i in range(N):
+#         score += ((X[i]/max(X)) * 100)/N
+# print(score)
+
+# 15596
+# import sys
+# a = list(map(int, sys.stdin.readline().split()))
+# def solve(a):
+#     ans = 0
+#     for i in range(len(a)):
+#         ans += a[i]
+#     return ans
+
+# 11720
+# N = int(input())
+# A = list(map(int, input()))
+# if len(A) == N:
+#     sum = 0
+#     for i in range(N):
+#         sum += A[i]
+#     print(sum)
+
+# 2558
+# A = int(input())
+# B = int(input())
+# print(A+B)
+
+# 10872
+# N = int(input())
+# fact = 1
+# for i in range(N):
+#     fact *= (i+1)
+# print(fact)
+
+# 10953
+# N = int(input())
+# for i in range(N):
+#     A, B = map(int, input().split(','))
+#     print(A+B)
+
+# 10757
+# A, B = map(int, input().split())
+# print(A+B)
+
+# 15792
+# A, B = map(int, input().split())
+# print(A/B)
+
+# 2576
+# A = int(input())
+# B = int(input())
+# C = int(input())
+# D = int(input())
+# E = int(input())
+# F = int(input())
+# G = int(input())
+# arr = [A, B, C, D, E, F, G]
+# arr2 = []
+# for i in range(7):
+#     if arr[i] % 2 != 0:
+#         arr2.append(arr[i])
+# if len(arr2) == 0:
+#     print(-1)
+# else:
+#     print(sum(arr2))
+#     print(min(arr2))
+
+# 10886
+# N = int(input())
+# survey = []
+# for i in range(N):
+#     vote = int(input())
+#     survey.append(vote)
+# if survey.count(0) > survey.count(1):
+#     print('Junhee is not cute!')
+# else:
+#     print('Junhee is cute!')
+
+# 10156
+K, N, M = map(int, input().split())
+if K*N > M:
+    print(K*N-M)
+else:
+    print(0)
