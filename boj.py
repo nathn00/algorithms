@@ -429,3 +429,20 @@
 #     if alphabet[i] in S:word += str(S.index(alphabet[i])) + ' '
 #     else:word += '-1 '
 # print(word)
+
+# 2675
+# T = int(input())
+# if T >= 1 and T <= 1000:
+#     for i in range(T):
+#         R, B = map(str, input().split())
+#         word = ''
+#         for w in range(len(B)):
+#             word += B[w] * int(R)
+#         print(word)
+
+# 2908
+# A, B = map(int, input().split())
+# arr = [int(str(A)[::-1]), int(str(B)[::-1])]
+# print(max(arr))
+
+# 5622
