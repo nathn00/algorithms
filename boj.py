@@ -401,18 +401,31 @@
 #     print(arr)
 
 # 4344 ==> 잘 나오는데 왜 틀린걸까....
-C = int(input())
-for i in range(C):
-    N = list(map(int, input().split()))
-    mean = sum(N[1:])/N[0]
-    st_above_mean = 0
-    if len(N) == N[0] + 1:
-        for s in range(len(N[1:])):
-            if N[1:][s] > mean:
-                st_above_mean += 1
-        if len(str(round((st_above_mean/N[0])*100, 3))) == 6:
-            print(f'{round((st_above_mean/N[0])*100, 3)}%')
-        else:
-            print(f'{round((st_above_mean/N[0])*100, 3)}00%')
-    else:
-        break
+# C = int(input())
+# for i in range(C):
+#     N = list(map(int, input().split()))
+#     if N[0] == len(N[1:]) and N[0] != 0:
+#         mean = sum(N[1:])/N[0]
+#         st_above_mean = 0
+#         for s in range(len(N[1:])):
+#             if N[1:][s] > mean:
+#                 st_above_mean += 1
+#         apart = str(round((st_above_mean/N[0])*100, 3)).split('.')
+#         print(f'{apart[0]}.{apart[1].ljust(3,"0")}%')
+#     else:
+#         break
+
+# 11654
+# A = input()
+# if len(A) == 1:
+#     print(ord(A))
+
+# 10809
+# alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
+#             'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+# S = input()
+# word = ''
+# for i in range(len(alphabet)):
+#     if alphabet[i] in S:word += str(S.index(alphabet[i])) + ' '
+#     else:word += '-1 '
+# print(word)
