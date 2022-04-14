@@ -445,4 +445,29 @@
 # arr = [int(str(A)[::-1]), int(str(B)[::-1])]
 # print(max(arr))
 
-# 5622
+# 5622 ==> 보류!
+# from string import ascii_lowercase
+# alphabet_list = list(ascii_lowercase)
+# W = input()
+# arr = []
+# for i in range(len(alphabet_list)):
+#     alphabet = ''
+#     for w in range(len(W)):
+#         if alphabet_list[i] == W[w].lower():
+#             alphabet += alphabet_list[i]
+#     arr.append(alphabet)
+# set_list = list(set(arr))[1::]
+# sorted_arr = sorted(set_list, key=lambda x: len(x))
+# print(sorted_arr)
+
+# 4504
+# n = int(input())
+# while True:
+#     numb = int(input())
+#     if numb != 0:
+#         if numb % n != 0:
+#             print(f'{numb} is NOT a multiple of {n}.')
+#         else:
+#             print(f'{numb} is a multiple of {n}.')
+#     else:
+#         break
