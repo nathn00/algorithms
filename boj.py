@@ -445,6 +445,36 @@
 # arr = [int(str(A)[::-1]), int(str(B)[::-1])]
 # print(max(arr))
 
+# 4504
+# n = int(input())
+# while True:
+#     numb = int(input())
+#     if numb != 0:
+#         if numb % n != 0:
+#             print(f'{numb} is NOT a multiple of {n}.')
+#         else:
+#             print(f'{numb} is a multiple of {n}.')
+#     else:
+#         break
+
+# 3046
+# R1, S = map(int, input().split())
+# R2 = 2 * S - R1
+# print(R2)
+
+# 2163
+# N, M = map(int, input().split())
+# print(N * M - 1)
+
+# 10699
+# from datetime import datetime, timedelta
+# print(str(datetime.today() + timedelta(hours=9))[:10])
+
+# 7287
+# print(63)
+# print('qkrdlswo98')
+
+
 # 5622 ==> 보류!
 # from string import ascii_lowercase
 # alphabet_list = list(ascii_lowercase)
@@ -459,15 +489,3 @@
 # set_list = list(set(arr))[1::]
 # sorted_arr = sorted(set_list, key=lambda x: len(x))
 # print(sorted_arr)
-
-# 4504
-# n = int(input())
-# while True:
-#     numb = int(input())
-#     if numb != 0:
-#         if numb % n != 0:
-#             print(f'{numb} is NOT a multiple of {n}.')
-#         else:
-#             print(f'{numb} is a multiple of {n}.')
-#     else:
-#         break
