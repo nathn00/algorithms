@@ -474,6 +474,42 @@
 # print(63)
 # print('qkrdlswo98')
 
+# 2530
+# A, B, C = map(int, input().split())
+# D = int(input())
+# if (A >= 0 and A < 24) and (B >= 0 and B < 60) and (C >= 0 and C < 60) and (D >= 0 and D < 500000):
+#     C += (D % 60)
+#     B += (D // 60)
+#     if C > 59:
+#         B += 1
+#         C %= 60
+#     if B > 59:
+#         A += (B // 60)
+#         B %= 60
+#     if A > 23:
+#         A %= 24
+#     print(A, B, C)
+
+# 2914
+# A, I = map(int, input().split())
+# print(A * (I - 1) + 1)
+
+# 5355
+T = int(input())
+for t in range(T):
+    N = list(map(str, input().split()))
+    if '.' in N[0]:
+        N_first = float(N[0])
+    else:
+        N_first = int(N[0])
+    for n in range(1, len(N)):
+        if N[n] == '@':
+            N_first *= 3
+        elif N[n] == '%':
+            N_first += 5
+        elif N[n] == '#':
+            N_first -= 7
+# from here
 
 # 5622 ==> 보류!
 # from string import ascii_lowercase
