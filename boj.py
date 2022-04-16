@@ -495,21 +495,44 @@
 # print(A * (I - 1) + 1)
 
 # 5355
-T = int(input())
-for t in range(T):
-    N = list(map(str, input().split()))
-    if '.' in N[0]:
-        N_first = float(N[0])
-    else:
-        N_first = int(N[0])
-    for n in range(1, len(N)):
-        if N[n] == '@':
-            N_first *= 3
-        elif N[n] == '%':
-            N_first += 5
-        elif N[n] == '#':
-            N_first -= 7
-# from here
+# T = int(input())
+# for t in range(T):
+#     N = list(map(str, input().split()))
+#     if '.' in N[0]:
+#         N_first = float(N[0])
+#     else:
+#         N_first = int(N[0])
+#     for n in range(1, len(N)):
+#         if N[n] == '@':
+#             N_first *= 3
+#         elif N[n] == '%':
+#             N_first += 5
+#         elif N[n] == '#':
+#             N_first -= 7
+#     print("{:.2f}".format(N_first)) ==> round함수의 한계점
+
+# 10817
+# A, B, C = map(int, input().split())
+# arr_sort = sorted([A, B, C])
+# print(arr_sort[1])
+
+# 4101
+# while True:
+#     A, B = map(int, input().split())
+#     if A != 0 and B != 0:
+#         if A > B:
+#             print('Yes')
+#         else:
+#             print('No')
+#     else:
+#         break
+
+# 3009
+A, B = map(int, input().split())
+C, D = map(int, input().split())
+E, F = map(int, input().split())
+arr_x = [A, C, E]
+arr_y = [B, D, F]
 
 # 5622 ==> 보류!
 # from string import ascii_lowercase
