@@ -527,12 +527,23 @@
 #     else:
 #         break
 
-# 3009
-A, B = map(int, input().split())
-C, D = map(int, input().split())
-E, F = map(int, input().split())
-arr_x = [A, C, E]
-arr_y = [B, D, F]
+# 10102
+# V = int(input())
+# R = input()
+# A = 0
+# B = 0
+# for i in range(len(R)):
+#     if R[i] == 'A':
+#         A += 1
+#     else:
+#         B += 1
+# if A > B:
+#     print('A')
+# elif A == B:
+#     print('Tie')
+# else:
+#     print('B')
+
 
 # 5622 ==> 보류!
 # from string import ascii_lowercase
