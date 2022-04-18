@@ -544,18 +544,35 @@
 # else:
 #     print('B')
 
+# 2935
+# A = input()
+# T = input()
+# B = input()
+# A_pow = len(A[1:])
+# B_pow = len(B[1:])
+# if T == '*':
+#     print(10**(A_pow + B_pow))
+# else:
+#     print(int(A) + int(B))
 
-# 5622 ==> 보류!
-# from string import ascii_lowercase
-# alphabet_list = list(ascii_lowercase)
-# W = input()
-# arr = []
-# for i in range(len(alphabet_list)):
-#     alphabet = ''
-#     for w in range(len(W)):
-#         if alphabet_list[i] == W[w].lower():
-#             alphabet += alphabet_list[i]
-#     arr.append(alphabet)
-# set_list = list(set(arr))[1::]
-# sorted_arr = sorted(set_list, key=lambda x: len(x))
-# print(sorted_arr)
+# 11653
+# N = int(input())
+# n = 1
+# while N - n != 0:
+#     n += 1
+#     if N % n == 0:
+#         print(n)
+#         N = N/n
+#         n = 1
+
+# 1789
+# A = int(input())
+# B = int(input())
+# C = int(input())
+# D = int(input())
+# E = int(input())
+# arr = [A, B, C, D, E]
+# for i in range(len(arr)):
+#     if arr[i] < 40:
+#         arr[i] = 40
+# print(int(sum(arr)/5))
