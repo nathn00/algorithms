@@ -625,10 +625,75 @@
 #         break
 
 # 1789
-S = int(input())
-arr = []
-i = 0
-while sum(arr) + i < S:
-    i += 1
-    arr.append(i)
-print(len(arr))
+# S = int(input())
+# arr = []
+# i = 0
+# while sum(arr) + i < S:
+#     i += 1
+#     arr.append(i)
+# print(len(arr))
+
+# 9610
+# n = int(input())
+# Q1 = 0
+# Q2 = 0
+# Q3 = 0
+# Q4 = 0
+# AXIS = 0
+# for i in range(n):
+#     x, y = map(int, input().split())
+#     if x*y > 0:
+#         if x > 0 and y > 0:
+#             Q1 += 1
+#         else:
+#             Q3 += 1
+#     elif x*y < 0:
+#         if x > 0 and y < 0:
+#             Q4 += 1
+#         else:
+#             Q2 += 1
+#     else:
+#         AXIS += 1
+# print(f'Q1: {Q1}')
+# print(f'Q2: {Q2}')
+# print(f'Q3: {Q3}')
+# print(f'Q4: {Q4}')
+# print(f'AXIS: {AXIS}')
+
+# 10988
+# word = input()
+# if word == word[::-1]:
+#     print(1)
+# else:
+#     print(0)
+
+# 5717
+# while True:
+#     M, F = map(int, input().split())
+#     if M != 0 and F != 0:
+#         print(M + F)
+#     else:
+#         break
+
+# 2754
+# dick = {
+#     'A+': 4.3, 'A0': 4.0, 'A-': 3.7,
+#     'B+': 3.3, 'B0': 3.0, 'B-': 2.7,
+#     'C+': 2.3, 'C0': 2.0, 'C-': 1.7,
+#     'D+': 1.3, 'D0': 1.0, 'D-': 0.7,
+#     'F': 0.0
+# }
+# score = input()
+# print(dick[score])
+
+# 10103
+# n = int(input())
+# a_score, b_score = 100, 100
+# for i in range(n):
+#     a, b = map(int, input().split())
+#     if a > b:
+#         b_score -= a
+#     elif a < b:
+#         a_score -= b
+# print(a_score)
+# print(b_score)
