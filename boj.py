@@ -696,4 +696,80 @@
 #     elif a < b:
 #         a_score -= b
 # print(a_score)
-# print(b_score)
+# print(b_score)3
+
+# 2476
+# N = int(input())
+# price = []
+# for i in range(N):
+#     D = list(map(int, input().split()))
+#     D_set = list(set(sorted(D)))
+#     if len(D_set) == 3:
+#         price.append(D_set[2]*100)
+#     elif len(D_set) == 2:
+#         D.remove(D_set[0])
+#         D.remove(D_set[1])
+#         price.append(1000 + (D[0] * 100))
+#     else:
+#         price.append(10000 + (D_set[0] * 1000))
+# print(max(price))
+
+# 3009
+# A = list(map(int, input().split()))
+# B = list(map(int, input().split()))
+# C = list(map(int, input().split()))
+# arr_x = sorted([A[0], B[0], C[0]])
+# arr_y = sorted([A[1], B[1], C[1]])
+# non_x = (2 * arr_x[0]) + (2 * arr_x[-1]) - sum(arr_x)
+# non_y = (2 * arr_y[0]) + (2 * arr_y[-1]) - sum(arr_y)
+# print(non_x, non_y)
+
+# 5063
+# N = int(input())
+# for i in range(N):
+#     r, e, c = map(int, input().split())
+#     if r + c < e:
+#         print('advertise')
+#     elif r + c == e:
+#         print('does not matter')
+#     else:
+#         print('do not advertise')
+
+# 7567
+# dish = input()
+# height = 10
+# for i in range(0, len(dish)-1):
+#     if dish[i+1] == dish[i]:
+#         height += 5
+#     else:
+#         height += 10
+# print(height)
+
+# 10214
+# T = int(input())
+# for _ in range(T):
+#     Y = K = 0
+#     for _ in range(9):
+#         y, k = map(int, input().split())
+#         Y += y
+#         K += k
+#     if Y > K:
+#         print('Yonsei')
+#     elif Y < K:
+#         print('Korea')
+#     else:
+#         print("Draw")
+
+# 11557
+# T = int(input())
+# for i in range(T):
+#     N = int(input())
+#     arr_s = []
+#     arr_d = []
+#     for s in range(N):
+#         S, D = map(str, input().split())
+#         arr_s.append(S)
+#         arr_d.append(int(D))
+#         max_d = max(arr_d)
+#         index = arr_d.index(max_d)
+#     print(arr_s[index])
