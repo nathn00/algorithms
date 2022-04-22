@@ -773,3 +773,17 @@
 #         max_d = max(arr_d)
 #         index = arr_d.index(max_d)
 #     print(arr_s[index])
+
+# 1837 ==> 보류!
+# from math import ceil ==> 좋은 시도였지만.. 시간초과
+# P, K = map(int, input().split())
+# i = ceil(P**(1/2))
+# m = 1
+# while True:
+#     i -= m
+#     if P % i == 0:
+#         break
+# if i < K:
+#     print('BAD', i)
+# else:
+#     print('GOOD')
