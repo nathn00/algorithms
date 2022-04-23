@@ -774,8 +774,80 @@
 #         index = arr_d.index(max_d)
 #     print(arr_s[index])
 
-# 1837 ==> 보류!
-# from math import ceil ==> 좋은 시도였지만.. 시간초과
+# 10181
+# while True:
+#     n = int(input())
+#     n_origin = n
+#     arr = ['1']
+#     i = 1
+#     if n != -1:
+#         while n - i != 0:
+#             i += 1
+#             if n % i == 0:
+#                 arr.append(str(i))
+#         arr_int = map(int, arr)
+#         integrate = sum(arr_int) - n_origin
+#         if integrate != n_origin:
+#             print(f'{n_origin} is NOT perfect.')
+#         else:
+#             print(f'{n_origin} = {" + ".join(arr[:-1])}')
+#     else:
+#         break
+
+# 2750
+# N = int(input())
+# arr = []
+# for i in range(N):
+#     n = int(input())
+#     arr.append(n)
+# arr_s = sorted(arr)
+# for s in range(N):
+#     print(arr_s[s])
+
+# 2752
+# A, B, C = map(int, input().split())
+# arr = [A, B, C]
+# for i in range(3):
+#     print(sorted(arr)[i], end=' ')
+
+# 5800
+K = int(input())
+for i in range(K):
+    arr_gap = []
+    N = list(map(int, input().split()))
+    arr_sort = sorted(N[1:])
+    for s in range(len(arr_sort)):
+        arr_gap.append(arr_sort[i+1]-arr_sort[i])
+    print(f'Class {i+1}')
+    print(f'Max {arr_sort[-1]}, Min {arr_sort[0]}, Largest gap {max(arr_gap)}')
+
+# 시간초과, 메모리초과 모음집
+
+# 10989 => 메모리초과
+# import sys
+# n = int(sys.stdin.readline())
+# b = [0] * 10001
+# for i in range(n):
+#     b[int(sys.stdin.readline())] += 1
+# for i in range(10001):
+#     if b[i] != 0:
+#         for j in range(b[i]):
+#             print(i)
+
+# 10815 => 시간초과
+# from sys import stdin
+# N = int(stdin.readline())
+# get = list(map(int, stdin.readline().split()))
+# M = int(stdin.readline())
+# suggest = list(map(int, stdin.readline().split()))
+# for i in range(M):
+#     if suggest[i] in get:
+#         print(1, end=' ')
+#     else:
+#         print(0, end=' ')
+
+# 1837 => 시간초과
+# from math import ceil
 # P, K = map(int, input().split())
 # i = ceil(P**(1/2))
 # m = 1
