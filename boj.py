@@ -810,16 +810,9 @@
 # for i in range(3):
 #     print(sorted(arr)[i], end=' ')
 
-# 5800
-K = int(input())
-for i in range(K):
-    arr_gap = []
-    N = list(map(int, input().split()))
-    arr_sort = sorted(N[1:])
-    for s in range(len(arr_sort)):
-        arr_gap.append(arr_sort[i+1]-arr_sort[i])
-    print(f'Class {i+1}')
-    print(f'Max {arr_sort[-1]}, Min {arr_sort[0]}, Largest gap {max(arr_gap)}')
+# 16430
+A, B = map(int, input().split())
+print(B-A, B)
 
 # 시간초과, 메모리초과 모음집
 
