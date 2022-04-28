@@ -811,8 +811,11 @@
 #     print(sorted(arr)[i], end=' ')
 
 # 16430
-A, B = map(int, input().split())
-print(B-A, B)
+# A, B = map(int, input().split())
+# print(B-A, B)
+
+# 9654
+print('I\'m Sexy')
 
 # 시간초과, 메모리초과 모음집
 
